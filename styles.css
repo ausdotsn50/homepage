@@ -1,6 +1,11 @@
 .first-cont {
-    padding: 4.5%;
+    padding: 5%;
+    padding-bottom: 1%;
     background: #7e928a;
+}
+
+.intro-section {
+    padding-top: 3%;
 }
 
 .second-cont {
@@ -40,10 +45,6 @@
     color: #ebd7c6;
 }
 
-.intro-section {
-    padding-top: 2.5%;
-    /* font-size: 30px; */
-}
 
 p {
     text-align: justify;
