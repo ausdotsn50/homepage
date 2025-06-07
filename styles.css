@@ -16,6 +16,8 @@
     background: #aaa891;
 }
 
+.card-title,
+.card-text,
 .first-cont ,
 .second-cont {
     color: white;
@@ -78,4 +80,41 @@ p {
 
 .footer-sect {
     text-align: center;
+}
+
+.proj-row {
+    background: #7e928a;
+    padding: 1%;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+
+.card {
+    width: 15rem; 
+    height: fit-content;
+    --bs-card-bg: none;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.btn-primary {
+    --bs-btn-bg: #56534a;
+    --bs-btn-border-color: #56534a;
+    --bs-btn-hover-color: #ebd7c6;
+    --bs-btn-hover-bg: #56534a;
+    --bs-btn-hover-border-color: #56534a;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #b2ac88;
+    --bs-btn-active-bg: #090907;
+    --bs-btn-active-border-color: #56534a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-bg: #56534a;
+    --bs-btn-disabled-border-color: #56534a;
 }
