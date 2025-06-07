@@ -1,0 +1,81 @@
+.first-cont {
+    padding: 4.5%;
+    background: #7e928a;
+}
+
+.second-cont {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: #aaa891;
+}
+
+.first-cont,
+.second-cont {
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+
+.navbar-brand,
+.nav-link {
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+.navbar {
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-active-color: #ebd7c6;
+}
+
+.navbar,
+.navbar-nav {
+    --bs-navbar-brand-hover-color: white;
+    --bs-nav-link-hover-color: white;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #ebd7c6;
+}
+
+.intro-section {
+    padding-top: 2.5%;
+    /* font-size: 30px; */
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.offcanvas {
+    --bs-offcanvas-bg: #aaa891;
+    --bs-offcanvas-color: none;
+}
+
+.grid-cont {
+    --bs-gutter-x: 0;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.icon {
+    filter: invert(1);
+    width: 40px;
+    height: auto;
+}
+
+.border-purp {
+    border: 1px solid white;
+}
+
+.footer-sect {
+    text-align: center;
+}
