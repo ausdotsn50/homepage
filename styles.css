@@ -16,12 +16,11 @@
     background: #aaa891;
 }
 
-.first-cont,
+.first-cont ,
 .second-cont {
     color: white;
     font-family: "Georgia", serif;
 }
-
 
 .navbar-brand,
 .nav-link {
