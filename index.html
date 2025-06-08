@@ -16,9 +16,8 @@
         <title>Home</title>
     </head>
     <body>
-        <!-- First container-->
-        <div class="container-fluid first-cont" id="top-cont">
-            <!-- Navigation section -->
+        <!-- Navbar container -->
+        <div class="container-fluid nav-cont">
             <div class="row navbar-section">
                 <nav class="navbar navbar-expand-lg shadow-sm">
                 <div class="container">
@@ -55,9 +54,12 @@
                 </div>
                 </nav>
             </div>
+        </div>
 
+        <!-- Intro container-->
+        <div class="container-fluid intro-cont">
             <!-- Introductory section -->
-            <div class="row intro-section">
+            <div class="row">
                 <div class="col-10 col-lg-7">
                     <h1>hello, world &#127757</h1>
                     <p></p>
@@ -72,16 +74,14 @@
                 </div>
                 <div class="col-2 col-lg-5 justify-content-end"></div>
             </div>
-
         </div>
 
-        <!-- [Actual] second and third containers are in grid display -->
-        <div class="grid-container">
-            <div class="row grid-cont">
+        <!-- Custom grid display -->
+        <div class="grid-cont">
+            <div class="row grid-row">
                 <div class="col-lg-7">
                     <img src="assets/whisper-oth.png" class="w-100 h-100 object-fit-cover" alt="Whisper of the Heart">
                 </div>
-
                 <!-- d-flex flex-column to set a vertical direction-->
                  <!-- w-100 h-100 respecting container -->
                 <div class="col-lg-5 d-flex flex-column">
@@ -95,8 +95,9 @@
             </div>
         </div>
 
+        <!-- Custom grid display -->
         <div class="grid-container">
-            <div class="row grid-cont">
+            <div class="row grid-row">
                 <!-- d-flex flex-column to set a vertical direction-->
                  <!-- w-100 h-100 respecting container -->
                 <div class="col-lg-5 d-flex flex-column">
@@ -107,7 +108,6 @@
                         <img src="assets/garden-scp.jpg" class="w-100 h-100 object-fit-cover" alt="Garden of Words">
                     </div>
                 </div>
-
                 <div class="col-lg-7">
                     <img src="assets/garden-ps2.jpg" class="w-100 h-100 object-fit-cover" alt="Garden of Words">
                 </div>
@@ -115,44 +115,39 @@
         </div>
 
         <!-- Second container -->
-        <div class="container-fluid text-center second-cont">
-            
+        <div class="container-fluid text-center footer-cont">
+            <!-- Text -->
             <div class="row">
                 <div class="col">
-                    <p class="footer-sect"><i>End of short sequence of anime stills</i></p>
+                    <p style="text-align: center;"><i>End of short sequence of anime stills</i></p>
                     <hr>
                 </div>
             </div>
 
+            <!-- Contact external links -->
             <div class="row">
-
                 <div class="col-3 d-flex align-items-center">
                     <div class="flex-fill">
                         <a href="" target="_blank"><img style="width: 40px" src="assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
                     </div>
                 </div>
-
                 <div class="col-3 d-flex align-items-center">
                     <div class="flex-fill">
                         <a href="https://github.com/adzalmazan1" target="_blank"><img style="width: 35px" src="assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
                     </div>
                 </div>
-
                 <div class="col-3 d-flex align-items-center">
                     <div class="flex-fill">
                         <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img style="width: 35px" src="assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
                     </div>
                 </div>
-
                 <div class="col-3 d-flex align-items-center">
                     <div class="flex-fill">
                         <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img style="width: 45px" src="assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
                     </div>
                 </div>
-
             </div>
-
+        <!-- End of file -->  
         </div>
-
     </body>
 </html>

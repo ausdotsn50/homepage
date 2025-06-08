@@ -1,14 +1,29 @@
-.first-cont {
+p {
+    text-align: justify;
+}
+
+body,
+.navbar-brand,
+.nav-link {
+    color: white;
+    font-family: "Georgia", serif;
+}
+
+.nav-cont {
     padding: 5%;
+    padding-bottom: 0;
+    background: #7e928a;
+}
+
+.intro-cont {
+    padding-top: 2.7%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 1%;
     background: #7e928a;
 }
 
-.intro-section {
-    padding-top: 3%;
-}
-
-.second-cont {
+.footer-cont {
     padding-left: 4.5%;
     padding-right: 4.5%;
     padding-top: 1%;
@@ -16,27 +31,10 @@
     background: #aaa891;
 }
 
-.card-title,
-.card-text,
-.first-cont ,
-.second-cont {
-    color: white;
-    font-family: "Georgia", serif;
-}
-
-.navbar-brand,
-.nav-link {
-    color: white;
-    font-family: "Georgia", serif;
-}
-
+/* navbar */
 .navbar {
     --bs-navbar-toggler-focus-width: 0;
     --bs-navbar-active-color: #ebd7c6;
-}
-
-.navbar,
-.navbar-nav {
     --bs-navbar-brand-hover-color: white;
     --bs-nav-link-hover-color: white;
 }
@@ -44,11 +42,6 @@
 .navbar-brand:hover,
 .nav-link:hover {
     color: #ebd7c6;
-}
-
-
-p {
-    text-align: justify;
 }
 
 .navbar-toggler {
@@ -60,32 +53,23 @@ p {
     --bs-offcanvas-color: none;
 }
 
+/* custom grid */
 .grid-cont {
-    --bs-gutter-x: 0;
-}
-
-.grid-container {
     display: grid;
 }
 
+.grid-row {
+    --bs-gutter-x: 0;
+}
+
+/* svg files */
 .icon {
     filter: invert(1);
-    width: 40px;
     height: auto;
 }
 
-.border-purp {
-    border: 1px solid white;
-}
-
-.footer-sect {
-    text-align: center;
-}
-
 .proj-row {
-    background: #7e928a;
     padding: 1%;
-    
 }
 
 .card-img-top {
@@ -113,9 +97,14 @@ p {
     font-size: 12px;
 }
 
+.projects-cont {
+    background: #7e928a;
+}
+
 .btn-primary {
     color: white;
     font-size: 10px;
+    
     --bs-btn-bg: #56534a;
     --bs-btn-border-color: #56534a;
     --bs-btn-hover-color: #ebd7c6;
