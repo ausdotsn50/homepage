@@ -97,14 +97,25 @@ p {
 .card {
     width: 15rem; 
     height: fit-content;
-    --bs-card-bg: none;
+    --bs-card-bg: #d6d2ce;
+    --bs-card-border-color: #B8AAA5;
+    --bs-card-border-width: 1.5px;
+}
+
+.card-title {
+    color: #5A514B;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .card-text {
+    color: #5A514B;
     font-size: 12px;
 }
 
 .btn-primary {
+    color: white;
+    font-size: 10px;
     --bs-btn-bg: #56534a;
     --bs-btn-border-color: #56534a;
     --bs-btn-hover-color: #ebd7c6;
