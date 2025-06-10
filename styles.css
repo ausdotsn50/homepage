@@ -2,6 +2,36 @@ p {
     text-align: justify;
 }
 
+h2 {
+    text-align: center;
+}
+
+.form-cont {
+    background: #d6d2ce;
+    color: #5a514b;
+    border: 1.5px solid #B8aaa5;
+}
+
+.form-outer-cont {
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #7e928a;
+}
+
+.form-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.form-areas {
+    padding-bottom: 2%;
+}   
+
+.form-control {
+    border-color: #B8aaa5;
+}
+
 body,
 .navbar-brand,
 .nav-link {
@@ -82,18 +112,18 @@ body,
     width: 15rem; 
     height: fit-content;
     --bs-card-bg: #d6d2ce;
-    --bs-card-border-color: #B8AAA5;
+    --bs-card-border-color: #B8aaa5;
     --bs-card-border-width: 1.5px;
 }
 
 .card-title {
-    color: #5A514B;
+    color: #5a514b;
     font-weight: bold;
     font-size: 18px;
 }
 
 .card-text {
-    color: #5A514B;
+    color: #5a514b;
     font-size: 12px;
 }
 
@@ -106,15 +136,24 @@ body,
     font-size: 10px;
     
     --bs-btn-bg: #56534a;
-    --bs-btn-border-color: #56534a;
+    --bs-btn-border-color: none;
     --bs-btn-hover-color: #ebd7c6;
     --bs-btn-hover-bg: #56534a;
-    --bs-btn-hover-border-color: #56534a;
+    --bs-btn-hover-border-color: none;
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #b2ac88;
     --bs-btn-active-bg: #090907;
-    --bs-btn-active-border-color: #56534a;
+    --bs-btn-active-border-color: none;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-bg: #56534a;
-    --bs-btn-disabled-border-color: #56534a;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
 }
+
+/* Using a media query */
+/* The media query's "min-width" value will tell CSS to change the width of your container to 1000px only on screens larger than 1200px */
+@media (min-width: 1200px) {
+    .form-cont{
+        max-width: 800px;
+    }
+}
+
