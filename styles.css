@@ -6,6 +6,14 @@ h2 {
     text-align: center;
 }
 
+.contact-hdr {
+    text-align: center;
+}
+
+.bot-buffer {
+    margin-bottom: 2%;
+}
+
 body,
 .navbar-brand,
 .nav-link {
@@ -141,7 +149,7 @@ body,
 .form-outer-cont {
     padding: 10%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     background: #7e928a;
 }
 

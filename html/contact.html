@@ -58,9 +58,17 @@
         </div>
         
         <div class="container-fluid form-outer-cont">
+             <!-- Row three -->
+            <div class="row bot-buffer">
+                <div class="col">
+                    <h1 class="contact-hdr">hello, user</h1>
+                    <p class="contact-hdr">Kindly fill out the form.</p>
+                </div>
+            </div>
+
             <div class="container form-cont rounded-4">
                 <div class="row form-title">
-                    <h2>Placeholder</h2>
+                    <h2>Form<h2>
                 </div>
 
                 <!-- Row one -->
@@ -92,11 +100,14 @@
                     <div class="col-lg-6">
                         <div class="mb-3">
                             <label for="country" class="form-label">Country</label>
-                            <button class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
-                                <ul class="dropdown-menu">
+
+                            <button id="country" class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
+                                <ul class="dropdown-menu" id="countryList">
+                                    <!-- 
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    -->
                                 </ul>
                         </div>
                     </div>
@@ -110,30 +121,7 @@
                             <textarea class="form-control" id="messageBody" rows="6"></textarea>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- Row two -->
-                <div class="row form-areas">
-                    <div class="col">
-                        <label for="messageBody" class="form-label">How did you find this page?</label>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label" for="checkDefault">
-                                Default checkbox
-                            </label>
-                            </div>
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-                            <label class="form-check-label" for="checkChecked">
-                                Checked checkbox
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                
+                </div>                
             </div>
         </div>
 
@@ -165,6 +153,7 @@
                 </div>
             </div>
         </div>
-        
     </body>
+
+    <script src="../main.js"></script>
 </html>
