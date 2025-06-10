@@ -91,45 +91,49 @@
 
                     <div class="col-lg-6">
                         <div class="mb-3">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="1" placeholder="Doe">
+                            <label for="country" class="form-label">Country</label>
+                            <button class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- Row three -->
                 <div class="row form-areas">
-                    <div class="col-lg-6">
+                    <div class="col">
                         <div class="mb-3">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="2" placeholder="John">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="3" placeholder="Doe">
+                            <label for="messageBody" class="form-label">Message Body</label>
+                            <textarea class="form-control" id="messageBody" rows="6"></textarea>
                         </div>
                     </div>
                 </div>
 
-                <!-- Row four -->
+
+                <!-- Row two -->
                 <div class="row form-areas">
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="4" placeholder="John">
-                        </div>
-                    </div>
+                    <div class="col">
+                        <label for="messageBody" class="form-label">How did you find this page?</label>
 
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="5" placeholder="Doe">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Default checkbox
+                            </label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                            <label class="form-check-label" for="checkChecked">
+                                Checked checkbox
+                            </label>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
         </div>
 

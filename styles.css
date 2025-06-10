@@ -6,32 +6,6 @@ h2 {
     text-align: center;
 }
 
-.form-cont {
-    background: #d6d2ce;
-    color: #5a514b;
-    border: 1.5px solid #B8aaa5;
-}
-
-.form-outer-cont {
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background: #7e928a;
-}
-
-.form-title {
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.form-areas {
-    padding-bottom: 2%;
-}   
-
-.form-control {
-    border-color: #B8aaa5;
-}
-
 body,
 .navbar-brand,
 .nav-link {
@@ -157,3 +131,34 @@ body,
     }
 }
 
+/* forms */
+.form-cont {
+    background: #d6d2ce;
+    color: #5a514b;
+    border: 1.5px solid #B8aaa5;
+}
+
+.form-outer-cont {
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #7e928a;
+}
+
+.form-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.form-areas {
+    padding-bottom: 2%;
+}   
+
+.form-control {
+    border-color: #B8aaa5;
+}
+
+/* dropdown */
+.dropdown-menu {
+  min-width: 315px;
+}
