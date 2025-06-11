@@ -1,0 +1,27 @@
+// Country droplist
+var selectedCountries = ['Greece', 'Argentina', 'Japan', 'United States', 'Philippines'];
+
+// select <ul> with id #countryList
+const countryListContainer = document.querySelector("#countryList");
+
+for(let i = 0; i < selectedCountries.length; i++) {
+    // create new list
+    const newList = document.createElement("li");
+    newList.innerHTML = ('<button class="dropdown-item">' + selectedCountries[i] + '</button>'); // for escaping purposes
+
+    newList.setAttribute('id', 'elem' + i);
+
+    // append new list to 
+    countryListContainer.appendChild(newList);
+
+    document.querySelector('#elem' + i).addEventListener('click', function() {
+        document.querySelector('#country').textContent = selectedCountries[i];
+    });
+}
+
+// when formSubmit id is clicked, alert + ...
+document.querySelector('#formSubmit').addEventListener('click', function() {
+    alert('Form successfully submitted')
+});
+
+

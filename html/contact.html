@@ -1,3 +1,4 @@
+<!-- To practice form validation -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -35,19 +36,19 @@
                     <!-- Home -->
                     <!-- Add a scroll to top js -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
+                        <button class="nav-link mx-lg-2" aria-current="page" href="../">Home</button>
                     </li>
                     <!-- About -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="about.html">About</a>
+                        <button class="nav-link mx-lg-2" href="about.html">About</button>
                     </li>
                     <!-- Projects -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="projects.html">Projects</a>
+                        <button class="nav-link mx-lg-2" href="projects.html">Projects</button>
                     </li>
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="nav-link active mx-lg-2" href="contact.html">Contact</a>
+                        <button class="nav-link active mx-lg-2">Contact</button>
                     </li>
                     </ul>
                 </div>
@@ -99,15 +100,8 @@
                             <div class="mb-3">
                                 <label for="country" class="form-label">Country</label>
 
-                                <button id="country" class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
-                                    <ul class="dropdown-menu" id="countryList">
-                                        
-                                        <!-- 
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        -->
-                                    </ul>
+                                <button id="country" class="btn btn-primary form-control dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px;">Please select a country</button>
+                                    <ul class="dropdown-menu" id="countryList"></ul>
                             </div>
                         </div>
                     </div>
@@ -120,7 +114,15 @@
                                 <textarea class="form-control" id="messageBody" rows="6"></textarea>
                             </div>
                         </div>
-                    </div>                
+                    </div>    
+                    
+                    <!-- Row three -->
+                    <div class="row justify-content-center form-areas">
+                        <div class="col">
+                            <button id="formSubmit" type="submit" class="btn btn-primary mb-3 form-control" style="font-size: 16px;">Submit Form</button>
+                        </div>
+                    </div>    
+                    
                 </div>
             </div>
 
@@ -156,4 +158,5 @@
     </body>
 
     <script src="../main.js"></script>
+    <script src="../contact.js"></script>
 </html>
