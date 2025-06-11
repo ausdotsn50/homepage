@@ -16,139 +16,139 @@
         <title>Contact</title>
     </head>
     <body>
-        <!-- First container-->
-        <div class="container-fluid nav-cont">
-            <!-- Navigation section -->
-            <div class="row navbar-section">
-                <nav class="navbar navbar-expand-lg shadow-sm">
-                <div class="container">
-                    <a class="navbar-brand" href="../assets/Placeholder.pdf" download="Resume">adzalmazan</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">adzalmazan</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <!-- Home -->
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
-                        </li>
-                        <!-- About -->
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../html/about.html">About</a>
-                        </li>
-                        <!-- Projects -->
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="../html/projects.html">Projects</a>
-                        </li>
-                        <!-- Contact -->
-                        <li class="nav-item">
-                            <a class="nav-link active mx-lg-2" href="../html/contact.html">Contact</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
+        <div class="container-fluid overall-cont">
+            <!-- Navbar container -->
+            <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+            <!-- Container for -->
+            <div class="container">
+                <a class="navbar-brand" href="assets/Placeholder.pdf" download="Resume">adzalmazan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">adzalmazan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                </nav>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <!-- Home -->
+                    <!-- Add a scroll to top js -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
+                    </li>
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="about.html">About</a>
+                    </li>
+                    <!-- Projects -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="projects.html">Projects</a>
+                    </li>
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link active mx-lg-2" href="contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
             </div>
-        </div>
+            </nav>
         
-        <div class="container-fluid form-outer-cont">
-             <!-- Row three -->
-            <div class="row bot-buffer">
-                <div class="col">
-                    <h1 class="contact-hdr">hello, user</h1>
-                    <p class="contact-hdr">Kindly fill out the form.</p>
-                </div>
-            </div>
-
-            <div class="container form-cont rounded-4">
-                <div class="row form-title">
-                    <h2>Form<h2>
-                </div>
-
-                <!-- Row one -->
-                <div class="row form-areas">
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="John">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Doe">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row two -->
-                <div class="row form-areas">
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="emailAdd" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="emailAdd" placeholder="name@example.com">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="mb-3">
-                            <label for="country" class="form-label">Country</label>
-
-                            <button id="country" class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
-                                <ul class="dropdown-menu" id="countryList">
-                                    <!-- 
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    -->
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="container-fluid form-outer-cont">
                 <!-- Row three -->
-                <div class="row form-areas">
+                <div class="row bot-buffer">
                     <div class="col">
-                        <div class="mb-3">
-                            <label for="messageBody" class="form-label">Message Body</label>
-                            <textarea class="form-control" id="messageBody" rows="6"></textarea>
+                        <h1 class="contact-hdr">hello, user</h1>
+                        <p class="contact-hdr">Kindly fill out the form.</p>
+                    </div>
+                </div>
+
+                <div class="container form-cont rounded-4">
+                    <div class="row form-title">
+                        <h2>Form<h2>
+                    </div>
+
+                    <!-- Row one -->
+                    <div class="row form-areas">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="John">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                            </div>
                         </div>
                     </div>
-                </div>                
+
+                    <!-- Row two -->
+                    <div class="row form-areas">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="emailAdd" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailAdd" placeholder="name@example.com">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country</label>
+
+                                <button id="country" class="btn btn-secondary dropdown-toggle form-control" type="button" data-bs-toggle="dropdown" aria-expanded="false">Please select a country</button>
+                                    <ul class="dropdown-menu" id="countryList">
+                                        
+                                        <!-- 
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        -->
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Row three -->
+                    <div class="row form-areas">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="messageBody" class="form-label">Message Body</label>
+                                <textarea class="form-control" id="messageBody" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
             </div>
-        </div>
 
-        <!-- Footer container -->
-        <div class="container-fluid text-center footer-cont">
-            <div class="row">
-                <div class="col-3 d-flex align-items-center">
-                    <div class="flex-fill">
-                        <a href="" target="_blank"><img style="width: 40px" src="../assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+            <!-- Footer container -->
+            <div class="container-fluid text-center footer-cont">
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="" target="_blank"><img style="width: 40px" src="../assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-3 d-flex align-items-center">
-                    <div class="flex-fill">
-                        <a href="https://github.com/adzalmazan1" target="_blank"><img style="width: 35px" src="../assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://github.com/adzalmazan1" target="_blank"><img style="width: 35px" src="../assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-3 d-flex align-items-center">
-                    <div class="flex-fill">
-                        <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img style="width: 35px" src="../assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img style="width: 35px" src="../assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-3 d-flex align-items-center">
-                    <div class="flex-fill">
-                        <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img style="width: 45px" src="../assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img style="width: 45px" src="../assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
+                        </div>
                     </div>
                 </div>
             </div>

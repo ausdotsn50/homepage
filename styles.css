@@ -1,3 +1,8 @@
+.overall-cont {
+    --bs-gutter-x: 0;
+    background: #7e928a;
+}
+
 p {
     text-align: justify;
 }
@@ -21,18 +26,16 @@ body,
     font-family: "Georgia", serif;
 }
 
-.nav-cont {
+.projects-cont {
     padding: 5%;
-    padding-bottom: 0;
-    background: #7e928a;
+    padding-top: 13.5%;
+    padding-bottom: 1%;
 }
 
 .intro-cont {
-    padding-top: 2.7%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
+    padding-top: 17.5%;
     padding-bottom: 1%;
-    background: #7e928a;
 }
 
 .footer-cont {
@@ -56,8 +59,13 @@ body,
     color: #ebd7c6;
 }
 
+.navbar-brand {
+    margin-right: 0;
+}
+
 .navbar-toggler {
     border: none;
+    padding: 0;
 }
 
 .offcanvas {
@@ -136,6 +144,17 @@ body,
 @media (min-width: 1200px) {
     .form-cont{
         max-width: 800px;
+    }
+
+    .intro-cont {
+        padding: 5%;
+        padding-top: 6%;
+        padding-bottom: 1%;
+    }
+
+    .projects-cont {
+        padding: 1%;
+        padding-top: 5%;
     }
 }
 
