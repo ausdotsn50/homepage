@@ -139,23 +139,10 @@ body,
     --bs-btn-disabled-border-color: none;
 }
 
-/* Using a media query */
-/* The media query's "min-width" value will tell CSS to change the width of your container to 1000px only on screens larger than 1200px */
-@media (min-width: 1200px) {
-    .form-cont{
-        max-width: 800px;
-    }
-
-    .intro-cont {
-        padding: 5%;
-        padding-top: 6%;
-        padding-bottom: 1%;
-    }
-
-    .projects-cont {
-        padding: 1%;
-        padding-top: 5%;
-    }
+.form-outer-cont {
+    padding: 10%;
+    padding-top: 25%;
+    padding-bottom: 15%;
 }
 
 /* forms */
@@ -165,12 +152,6 @@ body,
     border: 1.5px solid #B8aaa5;
 }
 
-.form-outer-cont {
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 15%;
-    background: #7e928a;
-}
 
 .form-title {
     padding-top: 2%;
@@ -188,4 +169,30 @@ body,
 /* dropdown */
 .dropdown-menu {
   min-width: 315px;
+}
+
+
+/* Using a media query */
+/* The media query's "min-width" value will tell CSS to change the width of your container to 1000px only on screens larger than 1200px */
+@media (min-width: 1200px) {
+    .form-cont{
+        max-width: 800px;
+    }
+
+    .intro-cont {
+        padding: 5%;
+        padding-top: 6%;
+        padding-bottom: 1%;
+    }
+
+    .projects-cont {
+        padding: 1%;
+        padding-top: 5%;
+    }
+
+    .form-outer-cont {
+        padding: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
 }

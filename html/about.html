@@ -17,45 +17,86 @@
     </head>
     <body>
         <div class="container-fluid overall-cont">
-            <div class="container-fluid nav-cont">
-                <!-- Navigation section -->
-                <div class="row navbar-section">
-                    <nav class="navbar navbar-expand-lg shadow-sm">
-                    <div class="container">
-                        <a class="navbar-brand" href="../assets/Placeholder.pdf" download="Resume">adzalmazan</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">adzalmazan</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <!-- Home -->
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
-                            </li>
-                            <!-- About -->
-                            <li class="nav-item">
-                                <a class="nav-link active mx-lg-2" href="../html/about.html">About</a>
-                            </li>
-                            <!-- Projects -->
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="../html/projects.html">Projects</a>
-                            </li>
-                            <!-- Contact -->
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="../html/contact.html">Contact</a>
-                            </li>
-                            </ul>
-                        </div>
+            <!-- Navbar container -->
+            <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+            <!-- Container for -->
+            <div class="container">
+                <a class="navbar-brand" href="assets/Placeholder.pdf" download="Resume">adzalmazan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">adzalmazan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <!-- Home -->
+                    <!-- Add a scroll to top js -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
+                    </li>
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a class="nav-link active mx-lg-2" href="about.html">About</a>
+                    </li>
+                    <!-- Projects -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="projects.html">Projects</a>
+                    </li>
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </nav>
+        
+            <div class="container-fluid form-outer-cont">
+                <!-- Row three -->
+                <div class="row bot-buffer">
+                    <div class="col">
+                        <h1 class="contact-hdr">hello, user</h1>
+                        <p class="contact-hdr">Kindly fill out the form.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Footer container -->
+            <div class="container-fluid text-center footer-cont">
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="" target="_blank"><img style="width: 40px" src="../assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
                         </div>
                     </div>
-                    </nav>
+
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://github.com/adzalmazan1" target="_blank"><img style="width: 35px" src="../assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img style="width: 35px" src="../assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img style="width: 45px" src="../assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
+
+    <script src="../main.js"></script>
 </html>
