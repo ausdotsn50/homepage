@@ -21,7 +21,11 @@ for(let i = 0; i < selectedCountries.length; i++) {
 
 // when formSubmit id is clicked, alert + ...
 document.querySelector('#formSubmit').addEventListener('click', function() {
-    alert('Form successfully submitted')
+    console.log(document.querySelector('#firstName').value);
+    console.log(document.querySelector('#lastName').value);
+    console.log(document.querySelector('#emailAdd').value);
+    console.log(document.querySelector('#country').textContent);
+    console.log(document.querySelector('#messageBody').value);
+
+    alert('Form successfully submitted');
 });
-
-

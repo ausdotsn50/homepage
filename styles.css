@@ -140,6 +140,11 @@ body,
 }
 
 .form-outer-cont {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* solution to extra space when zoomed out */
+    background-color: #738880; 
     padding: 10%;
     padding-top: 25%;
     padding-bottom: 15%;
