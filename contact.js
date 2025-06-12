@@ -20,7 +20,7 @@ for(let i = 0; i < selectedCountries.length; i++) {
 }
 
 // when formSubmit id is clicked, alert + ...
-document.querySelector('#formSubmit').addEventListener('click', function() {
+document.querySelector('#formSubmit').addEventListener('click', function() {    
     console.log(document.querySelector('#firstName').value);
     console.log(document.querySelector('#lastName').value);
     console.log(document.querySelector('#emailAdd').value);
