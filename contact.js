@@ -27,5 +27,7 @@ document.querySelector('#formSubmit').addEventListener('click', function() {
     console.log(document.querySelector('#country').textContent);
     console.log(document.querySelector('#messageBody').value);
 
+    // window.open('https://mail.google.com/mail/u/0/#inbox?compose=new');
+
     alert('Form successfully submitted');
 });
