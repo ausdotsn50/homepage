@@ -1,3 +1,29 @@
+.piano-cont {
+    padding: 35px 40px;
+    border-radius: 20px;
+    background: #141414;
+    width: fit-content;
+}
+
+.black-key {
+    height: 70px;
+    width: 22px;
+    z-index: 2;
+    margin: 0 -11px 0 -11px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+    color: white;
+}
+
+.white-key {
+    height: 173px;
+    width: 45px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: linear-gradient(#fff 96%, #eee 4%);
+    color: black;
+}
+
 .overall-cont {
     background: #7e928a;
 }
@@ -12,7 +38,10 @@ p {
     text-align: justify;
 }
 
-h2,
+.black-key,
+.white-key,
+.h2,
+.piano-labels,
 .contact-hdr {
     text-align: center;
 }
@@ -119,6 +148,7 @@ body,
 
 /* solution to extra space when zoomed out */
 .home-cont,
+.about-cont,
 .projects-cont,
 .form-outer-cont {
     min-height: 100vh;
@@ -207,6 +237,17 @@ body,
 /* Using a media query */
 /* The media query's "min-width" value will tell CSS to change the width of your container to 1000px only on screens larger than 1200px */
 @media (min-width: 1200px) {
+    .black-key {
+        margin: 0 -22px 0 -22px;
+        width: 44px;
+        height: 140px;
+    }
+
+    .white-key {
+        height: 230px;
+        width: 70px;
+    }
+
     .form-cont{
         max-width: 800px;
     }
