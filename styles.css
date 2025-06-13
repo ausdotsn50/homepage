@@ -1,4 +1,14 @@
-.h2,
+#about-list {
+    list-style-type: none;
+}
+
+.about-cont {
+    padding-top: 2.5%;
+}
+
+h2,
+#about-title,
+#about-list,
 .piano-labels,
 .contact-hdr {
     text-align: center;
