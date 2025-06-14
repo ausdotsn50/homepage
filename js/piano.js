@@ -1,14 +1,12 @@
+// Selecting all elements of class black and white key
+// When you use document.querySelectorAll(), it returns a NodeList (not a true array)
 var wkList = document.querySelectorAll('.white-key');
 var bkList = document.querySelectorAll('.black-key');
 
-// Array.from() is a built-in JavaScript method that creates a new array from
-// When you use document.querySelectorAll(), it returns a NodeList (not a true array).
-// Thus conversion is necessary
+// Array.from() is a built-in JavaScript method that creates a new array from NodeList etc.
 var comb = Array.from(wkList).concat(Array.from(bkList));
 
 // number of sections to be made
-var sections = 3;
-
 var Education = [
     '[2017 - 2021] Allen National High School — Science, Technology, and Engineering (STE)',
     '[2021 - 2023] University of the East — Science, Technology, Engineering, and Mathematics (STEM)',
@@ -17,7 +15,7 @@ var Education = [
 
 var Experience = [
     '[2017 - Present] Freelance — Video Editor',
-    '[2022 - Present] Samuel Digital — Lead Acquisition Specialist',
+    '[2022 - 2022] Samuel Digital — Lead Acquisition Specialist',
     '[2023 - 2023] Samuel Digital — Social Media Manager',
 ];
 
@@ -29,63 +27,57 @@ var Interests = [
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
 ];
 
+var sections = [Education, Experience, Interests];
+var spacedTitle = ['E D U C A T I O N', 'E X P E R I E N C E', 'I N T E R E S T S'];
+
+// Selecting aboutTitle and aboutList to be modified
 var aboutTitle = document.querySelector('#about-title');
 var aboutList = document.querySelector('#about-list');
 
-function educInfo() {
-    var aboutTitle = document.querySelector('#about-title');
-    aboutTitle.textContent = 'Education';
+function aboutTitleDefault(spacedTitle) {
+    // setting the attribute
+    aboutTitle.setAttribute('style', 'margin: 16px 0 16px 0');
 
+    // checking if it's NULL
     if(aboutList != null) {
         aboutList.innerHTML = '';
     }
 
-    for(let i = 0; i < Education.length; i++) {
+    aboutTitle.textContent = spacedTitle;
+}
+
+function aboutListDefault(specList) {
+    for(let i = 0; i < specList.length; i++) {
         var newList = document.createElement('li');
-        var textNode = document.createTextNode(Education[i]);
+        var textNode = document.createTextNode(specList[i]);
         newList.appendChild(textNode);
+
+        newList.setAttribute('style', 'margin-bottom: 10px');
         
         aboutList.appendChild(newList);
     }
+}
+
+function educInfo() {
+    aboutTitleDefault(spacedTitle[0]);
+    aboutListDefault(Education);
 }
 
 function expInfo() {
-    aboutTitle.textContent = 'Experience';
-
-    if(aboutList != null) {
-        aboutList.innerHTML = '';
-    }
-
-    for(let i = 0; i < Experience.length; i++) {
-        var newList = document.createElement('li');
-        var textNode = document.createTextNode(Experience[i]);
-        newList.appendChild(textNode);
-        
-        aboutList.appendChild(newList);
-    }
+    aboutTitleDefault(spacedTitle[1]); 
+    aboutListDefault(Experience);
 }
 
 function interestsInfo() {
-    aboutTitle.textContent = 'Interests';
-
-    if(aboutList != null) {
-        aboutList.innerHTML = '';
-    }
-
-    for(let i = 0; i < Interests.length; i++) {
-        var newList = document.createElement('li');
-        var textNode = document.createTextNode(Interests[i]);
-        newList.appendChild(textNode);
-        
-        aboutList.appendChild(newList);
-    }
+    aboutTitleDefault(spacedTitle[2]);
+    aboutListDefault(Interests);
 }
 
 var functionForKeys = [educInfo, expInfo, interestsInfo];
 
 // Selecting active keys
 var listOfUsed = [];
-for(let i = 0; i < sections; i++) {
+for(let i = 0; i < sections.length; i++) {
     // Returns a random integer from 0 to 11
     do {
         var randNum = Math.floor(Math.random() * comb.length);
@@ -94,7 +86,7 @@ for(let i = 0; i < sections; i++) {
     listOfUsed.push(randNum);
 
     comb[randNum].addEventListener('click', function(e) {
-        this.setAttribute("style", "background: #c4643f;");
+        this.setAttribute('style', 'background: #c4643f;');
 
         // reset the color after a short delay
         setTimeout(() => {

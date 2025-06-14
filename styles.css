@@ -3,7 +3,7 @@
 }
 
 .about-cont {
-    padding-top: 2.5%;
+    padding-top: 15%;
 }
 
 h2,
@@ -245,6 +245,10 @@ body,
 /* Using a media query */
 /* The media query's "min-width" value will tell CSS to change the width of your container to 1000px only on screens larger than 1200px */
 @media (min-width: 1200px) {
+    .about-cont {
+        padding-top: 5%;
+    }
+
     .black-key {
         margin: 0 -22px 0 -22px;
         width: 44px;
