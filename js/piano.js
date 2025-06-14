@@ -20,11 +20,13 @@ var Experience = [
 ];
 
 var Interests = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+    'All sorts of burgers',
+    'Cycling', 
+    'Badminton', 
+    'Comedy / Mystery',
+    'Jazz / Neo soul / R&B', 
+    'Jogging',
+    'Musical Instruments',
 ];
 
 var sections = [Education, Experience, Interests];
