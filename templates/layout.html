@@ -9,21 +9,22 @@
         <!-- link for CSS, script for JS (bootstrap framework) -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/piano.js"></script>
+        <script src="../static/js/main.js"></script>
 
         <!-- Own css file -->
-        <link href="../styles.css" rel="stylesheet">
+        <link href="../static/styles.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../static/assets/icons/icon.png">
 
-        <title>About</title>
+        <title>{% block title %} {% endblock %}</title>
     </head>
     <body>
         <div class="container-fluid overall-cont">
+
             <!-- Navbar container -->
             <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
             <!-- Container for -->
             <div class="container">
-                <a class="navbar-brand" href="assets/Placeholder.pdf" download="Resume">adzalmazan</a>
+                <a class="navbar-brand" href="../static/assets/icons/Placeholder.pdf" download="Resume">adzalmazan</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,69 +38,27 @@
                     <!-- Home -->
                     <!-- Add a scroll to top js -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
+                        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %} mx-lg-2" href="/">Home</a>
                     </li>
                     <!-- About -->
                     <li class="nav-item">
-                        <button class="nav-link active mx-lg-2">About</button>
+                        <a class="nav-link {% if request.endpoint == 'about' %}active{% endif %} mx-lg-2" href="/about">About</a>
                     </li>
                     <!-- Projects -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="projects.html">Projects</a>
+                        <a class="nav-link {% if request.endpoint == 'projects' %}active{% endif %} mx-lg-2" href="/projects">Projects</a>
                     </li>
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
+                        <a class="nav-link {% if request.endpoint == 'contact' %}active{% endif %} mx-lg-2" href="/contact">Contact</a>
                     </li>
                     </ul>
                 </div>
                 </div>
             </div>
             </nav>
-
-            <!-- Content container -->
-            <div class="container-fluid about-cont">
-
-                <div class="container">
-                    <div class="container piano-cont rounded-4 bot-buffer"> <!-- To change -->
-                        <div class="row">
-                            <div class="col piano-labels bot-buffer"><i>Press a key, unlock a piece of me</i></div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <h2 id="about-title">This is a title</h2>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                            <ul id="about-list">
-                                <!-- Add li here -->
-                            </ul>
-
-                    </div>
-
-
-                </div>
-            </div>
+            
+            {% block main %} {% endblock %}
 
             <!-- Footer container -->
             <div class="container-fluid text-center footer-cont">
@@ -115,27 +74,27 @@
                 <div class="row">
                     <div class="col-3 d-flex align-items-center">
                         <div class="flex-fill">
-                            <a href="" target="_blank"><img id="tele_ic" style="width: 40px" src="../assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                            <a href="https://www.instagram.com/ausdotsn50/" target="_blank"><img id="insta_ic" style="width: 37.5px" src="../static/assets/icons/icon-instagram.svg" class="icon object-fit-cover" alt="Instagram"></a>
                         </div>
                     </div>
                     <div class="col-3 d-flex align-items-center">
                         <div class="flex-fill">
-                            <a href="https://github.com/adzalmazan1" target="_blank"><img id="gh_ic" style="width: 35px" src="../assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
+                            <a href="https://github.com/ausdotsn50/" target="_blank"><img id="gh_ic" style="width: 35px" src="../static/assets/icons/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
                         </div>
                     </div>
                     <div class="col-3 d-flex align-items-center">
                         <div class="flex-fill">
-                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img id="strv_ic" style="width: 35px" src="../assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
+                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img id="strv_ic" style="width: 35px" src="../static/assets/icons/icon-strava.svg" class="icon object-fit-cover" alt="Strava"></a>
                         </div>
                     </div>
                     <div class="col-3 d-flex align-items-center">
                         <div class="flex-fill">
-                            <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img id="link_ic" style="width: 45px" src="../assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
+                            <a href="https://www.linkedin.com/in/ausdotsn50/" target="_blank"><img id="link_ic" style="width: 45px" src="../static/assets/icons/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
-            <!-- End of file -->
-            </div>
+            </div> <!-- Footer end -->
+
         </div>
     </body>
 </html>

@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo(0, 0);
     });
 
-    const contactIcons = ['tele_ic', 'gh_ic', 'strv_ic', 'link_ic'];
-    const name = ['Telegram', 'Github', 'Strava', 'LinkedIn'];
+    const contactIcons = ['insta_ic', 'gh_ic', 'strv_ic', 'link_ic'];
+    const name = ['Instagram', 'Github', 'Strava', 'LinkedIn'];
 
     const iconHover = document.querySelector('#icon-hover');
 

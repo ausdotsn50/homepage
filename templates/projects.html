@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    Projects 
+{% endblock %}
+
+{% block main %}
+    <!-- Projects display container -->
+    <div class="container-fluid projects-cont">
+
+        {% for project_data in projects_data %}
+            {% if loop.index0 % 4 == 0 %}
+            <!-- Start new row every 4 cards -->
+            <!-- Includes index 0 -->
+            <div class="row justify-content-center proj-row">
+            {% endif %}
+
+                <div class="col-6 col-lg-3 d-flex justify-content-center p-2">
+                    <div class="card h-100">
+                        {% if ' ' in project_data.name %}
+                            {% set filename = project_data.name.split(' ') %}
+                        <img src="../static/assets/{{ filename[0] ~ '-' ~ filename[1] }}.jpeg" class="card-img-top" alt="...">
+                        {% else %}
+                            <img src="../static/assets/{{ project_data.name }}.jpeg" class="card-img-top" alt="...">
+                        {% endif %}
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">{{ project_data.name }}</h5>
+                            <p class="card-text">{{ project_data.description }}</p>
+                            <a href="{{ project_data.repository }}" target="_blank" 
+                               class="btn btn-primary mt-auto">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% if loop.index % 4 == 0 or loop.last %}
+            <!-- Close row after 4 cards OR on last card -->
+            </div>
+            {% endif %}
+        {% endfor %}
+
+    </div>
+{% endblock %}
+

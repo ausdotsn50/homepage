@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    About 
+{% endblock %}
+    
+    {% block main %}
+        <!-- Content container -->
+        <div class="container-fluid about-cont">
+            
+            <div class="container">
+                <div class="container piano-cont rounded-4 bot-buffer"> <!-- To change -->
+                    <div class="row">
+                        <div class="col piano-labels bot-buffer"><i>Unlock bits of the <b>About Page</b> through the keys : &#41;</i></div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h2 id="about-title">This is a title</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <ul id="about-list">
+                            <!-- Add li here -->
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="../static/js/piano.js"></script>
+    {% endblock %}
+    
