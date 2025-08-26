@@ -41,13 +41,13 @@ projects_data = [
 
     {
     "name": "Alzar",
-    "description": "A commissioned map for BIO 265 course research.",
+    "description": "A CS50x Final Project: iOS-based POS software specifically designed for water refilling station businesses.",
     "repository": "https://drive.google.com/drive/folders/1cyWaFJa8VZG12r35aU_1y1Fye6ATLQml?usp=drive_link"
     },
 
     {
     "name": "AiGRI",
-    "description": "A commissioned map for BIO 265 course research.",
+    "description": "APRU Tech Policy Hackathon 2025 Deliverable: Leveraging drone data and AI to make agricultural insurance more efficient and accessible for smallholder farmers.",
     "repository": "https://drive.google.com/drive/folders/1cyWaFJa8VZG12r35aU_1y1Fye6ATLQml?usp=drive_link"
     },
 ]
