@@ -23,7 +23,7 @@
             <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
             <!-- Container for -->
             <div class="container">
-                <a class="navbar-brand" href="../static/assets/Placeholder.pdf" download="Resume">adzalmazan</a>
+                <a class="navbar-brand" href="../static/assets/icons/Placeholder.pdf" download="Resume">adzalmazan</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,15 +41,15 @@
                     </li>
                     <!-- About -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %} mx-lg-2" href="/about">About</a>
+                        <a class="nav-link {% if request.endpoint == 'about' %}active{% endif %} mx-lg-2" href="/about">About</a>
                     </li>
                     <!-- Projects -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %} mx-lg-2" href="/projects">Projects</a>
+                        <a class="nav-link {% if request.endpoint == 'projects' %}active{% endif %} mx-lg-2" href="/projects">Projects</a>
                     </li>
                     <!-- Contact -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %} mx-lg-2" href="/contact">Contact</a>
+                        <a class="nav-link {% if request.endpoint == 'contact' %}active{% endif %} mx-lg-2" href="/contact">Contact</a>
                     </li>
                     </ul>
                 </div>
@@ -58,6 +58,41 @@
             </nav>
             
             {% block main %} {% endblock %}
+
+            <!-- Footer container -->
+            <div class="container-fluid text-center footer-cont">
+                <!-- Text -->
+                <div class="row">
+                    <div class="col">
+                        <p id="icon-hover" style="text-align: center;"><i>Page fin</i></p>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- Contact external links -->
+                <div class="row">
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.instagram.com/ausdotsn50/" target="_blank"><img id="insta_ic" style="width: 37.5px" src="../static/assets/icons/icon-instagram.svg" class="icon object-fit-cover" alt="Instagram"></a>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://github.com/ausdotsn50/" target="_blank"><img id="gh_ic" style="width: 35px" src="../static/assets/icons/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img id="strv_ic" style="width: 35px" src="../static/assets/icons/icon-strava.svg" class="icon object-fit-cover" alt="Strava"></a>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex align-items-center">
+                        <div class="flex-fill">
+                            <a href="https://www.linkedin.com/in/ausdotsn50/" target="_blank"><img id="link_ic" style="width: 45px" src="../static/assets/icons/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Footer end -->
 
         </div>
     </body>

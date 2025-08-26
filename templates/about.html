@@ -5,126 +5,46 @@
 {% endblock %}
     
     {% block main %}
-        <div class="container-fluid overall-cont">
-            <!-- Navbar container -->
-            <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
-            <!-- Container for -->
+        <!-- Content container -->
+        <div class="container-fluid about-cont">
+            
             <div class="container">
-                <a class="navbar-brand" href="assets/Placeholder.pdf" download="Resume">adzalmazan</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">adzalmazan</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1">
-                    <!-- Home -->
-                    <!-- Add a scroll to top js -->
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" aria-current="page" href="../">Home</a>
-                    </li>
-                    <!-- About -->
-                    <li class="nav-item">
-                        <button class="nav-link active mx-lg-2">About</button>
-                    </li>
-                    <!-- Projects -->
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="projects.html">Projects</a>
-                    </li>
-                    <!-- Contact -->
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            </nav>
-
-            <!-- Content container -->
-            <div class="container-fluid about-cont">
-
-                <div class="container">
-                    <div class="container piano-cont rounded-4 bot-buffer"> <!-- To change -->
-                        <div class="row">
-                            <div class="col piano-labels bot-buffer"><i>Press a key, unlock a piece of me</i></div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                            <div class="col-sm-1 black-key"> </div>
-                            <div class="col-sm-1 white-key"> </div>
-                        </div>
-
-                    </div>
-
+                <div class="container piano-cont rounded-4 bot-buffer"> <!-- To change -->
                     <div class="row">
-                        <div class="col">
-                            <h2 id="about-title">This is a title</h2>
-                        </div>
+                        <div class="col piano-labels bot-buffer"><i>Press a key, unlock a piece of me</i></div>
                     </div>
 
-                    <div class="row">
-
-                            <ul id="about-list">
-                                <!-- Add li here -->
-                            </ul>
-
+                    <div class="row justify-content-center">
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
+                        <div class="col-sm-1 black-key"> </div>
+                        <div class="col-sm-1 white-key"> </div>
                     </div>
-
 
                 </div>
-            </div>
 
-            <!-- Footer container -->
-            <div class="container-fluid text-center footer-cont">
-                <!-- Text -->
                 <div class="row">
                     <div class="col">
-                        <p id="icon-hover" style="text-align: center;"><i>Page fin</i></p>
-                        <hr>
+                        <h2 id="about-title">This is a title</h2>
                     </div>
                 </div>
 
-                <!-- Contact external links -->
                 <div class="row">
-                    <div class="col-3 d-flex align-items-center">
-                        <div class="flex-fill">
-                            <a href="" target="_blank"><img id="tele_ic" style="width: 40px" src="../assets/icon-telegram.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex align-items-center">
-                        <div class="flex-fill">
-                            <a href="https://github.com/adzalmazan1" target="_blank"><img id="gh_ic" style="width: 35px" src="../assets/icon-github.svg" class="icon object-fit-cover" alt="Gmail"></a>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex align-items-center">
-                        <div class="flex-fill">
-                            <a href="https://www.strava.com/athletes/adzalmazan" target="_blank"><img id="strv_ic" style="width: 35px" src="../assets/icon-strava.svg" class="icon object-fit-cover" alt="Whisper of the Heart"></a>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex align-items-center">
-                        <div class="flex-fill">
-                            <a href="https://www.linkedin.com/in/adzalmazan1/" target="_blank"><img id="link_ic" style="width: 45px" src="../assets/icon-linkedin.svg" class="icon object-fit-cover" alt="LinkedIn"></a>
-                        </div>
-                    </div>
+                        <ul id="about-list">
+                            <!-- Add li here -->
+                        </ul>
                 </div>
-            <!-- End of file -->
             </div>
         </div>
-    
+
         <script src="../static/js/piano.js"></script>
     {% endblock %}
     
